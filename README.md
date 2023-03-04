@@ -21,7 +21,7 @@ Computer vision wants to make projects with big earning and that’s why we star
 We started with dataset “tn.movie_budget.csv” we cleaned to converting the data in integers, then we get the values “Earnings” subtracting values “Budget” from values “Gross”. We ordered the data in descent way, and we get the first 10 movies to graph.
 ![Earnigs](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/top_10_highest_earnings.png)
 Then we got a data frame of the top ten movies with highest earnings and added the genres of each movie, in this way we could find more useful information about those genres.  
-![table-earnings](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/Top_ten_movies_and_genres.png)
+![table-earnings](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/Top_ten_movies_and_genres.jpg)
 
 ### Data analysis of Categories  
 Here will see the graphic of the most voted categories, we filter the data like only the categories
