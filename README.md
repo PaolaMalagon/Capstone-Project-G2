@@ -24,13 +24,16 @@ Then we got a data frame of the top ten movies with highest earnings and added t
 ![table-earnings](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/Top_ten_movies_and_genres.jpg)
 
 ### Data analysis of Categories  
-Here will see the graphic of the most voted categories, we filter the data like only the categories
-who have above 900,000 votes, so as you can see in this query the best rated movie it is 8.6.
-![Categories](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/max1.png)
-![Categories-table](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/max_table.png)
-but this one isnt the one with the most votes, the one with the most votes is action and thriller.
-In the sencond graphic it only show the best top 5 categories in a individual way.
+Here will see the graphic of the most voted categories, we filter the data like only the categories who have above 900,000 votes, so as you can see in this query the best rated movie it is 8.6.
+
+![Categories](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/max1.png) ![Categories-table](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/max_table.png)
+
+
+
+But this one isnt the one with the most votes, the one with the most votes is action and thriller. In the sencond graphic it only show the best top 5 categories in a individual way.
+
 ![Categories2](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/max2.png)
+
 So with this in mind we can see that this data could be related with the table of the 10 top movies.
 
 ### Data analysis of Directors
@@ -39,12 +42,24 @@ Here is the graph with the top 20 directors with their average ratings.
 
 We filtered the im.db database to only select directors that have a 7 or higher average rating for their body of work and over 400,000 votes on their films then limited the query to the top 20 in order of highest rating. On the next graph you will see that we worked on getting the Categories and film names for those top 20 directors. but the categories are grouped together i.e "action,adventure,drama".
 ![Directors-table](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/Categories_director.png)
-so in the next graph we then seperated those categories into individual strings and also listed the frequency showing that Adventure, Action, and Sci-fi were the top three most highly voted and rated categories for these directors.
+
+So, in the next graph we then seperated those categories into individual strings and also listed the frequency showing that Adventure, Action, and Sci-fi were the top three most highly voted and rated categories for these directors.
+
 ![Directors2](https://github.com/PaolaMalagon/Killer-Pandas/blob/main/images/Miguel2.png)
 
 ## Statistical Communication
 Results of statistical inference
-Interpretation of these results in the context of the problem
+We made a z-test because the mean and standard desviation of our poblation and sample were well known. 
+The population is the whole `im.db` dataset cleaned and with outlier filtered, our sample is a random sample of the movies in a interval of 90 and 130 minutes.
+Our hypothesis and alpha are:
+* **Ha** :	The mean of the number of votes when a movie has a runtime 	between 90 and 130 is significantly bigger than the mean of all the 	movies in our dataset.
+* **Ho** :	There is no significantly difference between the sample mean and 	the population mean.
+* **α** = 0.05.
+
+The idea that we tested is if the movie has a runtime between 90 and 130 minutes will have significantly  bigger number of votes. And as we saw before the number of votes is more important than the raiting because the number of votes is related with the engagement and impact the movie could have on the people.
+
+Our results gaves a `z-score=2.34024` and the `P-value=0.0096`. With this **P-value** we was able to reject the Null Hypothesis and we can conclude if the movie has a runtime between 90 and 130 minutes will get bigger number of votes.
+
 
 ## Conclusion
 We recommend to make a movie with high earnings the category that could have most impact on people will
