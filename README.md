@@ -1,4 +1,4 @@
-# Killer Pandas Capstone 🐼
+# 🐼 The Killer Panda's Capstone Project 🐼
 This a repository for our casptone project 
 
 ## Overview ##
